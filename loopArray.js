@@ -37,29 +37,54 @@
 //   return smallest;
 // }
 
-Average redo using while loop
-function average(numbers) {
-  let total = numbers[0];
-  let i = 1;
-  while (i < numbers.length) {
-    total += numbers[i];
-    i++;
-  } 
-  return total/numbers.length;
-} 
+// Average redo using while loop
+// function average(numbers) {
+//   let total = numbers[0];
+//   let i = 1;
+//   while (i < numbers.length) {
+//     total += numbers[i];
+//     i++;
+//   } 
+//   return total/numbers.length;
+// } 
 
 //Using forEach method
-function average(numbers) {
-  let sum = 0;
-  numbers.forEach(function(item) {
+
+// function average(numbers) {
+//   let sum = 0;
+//   numbers.forEach(function(item) {
     
-    sum += item;
-  });
-  return sum/numbers.length;
+//     sum += item;
+//   });
+//   return sum/numbers.length;
+// }
+
+// average([1,2,3]);
+
+//Fizz Buzz Redo
+
+function fizzBuzz(countTo) {
+  const result = [];
+  for (let i = 1; i <= countTo; i++) {
+    switch(true) {
+    case i % 15 === 0: 
+      result.push('fizzbuzz');
+      break;
+    case i % 5 === 0:
+      result.push('buzz');
+      break;
+    case i % 3 === 0:
+      result.push('fizz');
+      break;
+    default:
+      result.push(i);
+      break;
+    }
+  } 
+  return result;
 }
-
-average([1,2,3]);
-
+ 
+console.log(fizzBuzz(15));
 
 
   
