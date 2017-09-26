@@ -72,6 +72,13 @@ console.log(rocksWarning('Main St and Pacific Ave'));
 
 
 
+let moves = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 
+const filtered = moves.filter(value => value[0] >= 0 && value[1] >=  0);
+console.log(filtered);
 
+const array = moves.map(value => value[0] + value[1]);
+console.log(array);
 
+const step = array.forEach(value => console.log(value));
+console.log(step);
