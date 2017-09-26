@@ -50,3 +50,28 @@ function filter(arr, fn) {
 }
 
 
+// Fuctions as return values;
+
+function hazardWarningCreater(typeOfWarning) {
+  let warningCounter = 0;
+
+  return function(location) {
+    warningCounter ++;
+    console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`);
+    console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`);
+  };
+    
+            
+}
+
+
+const rocksWarning = hazardWarningCreater('Rocks on the road');
+console.log(rocksWarning('Main St and Pacific Ave'));
+console.log(rocksWarning('Main St and Pacific Ave'));
+console.log(rocksWarning('Main St and Pacific Ave'));
+
+
+
+
+
+
