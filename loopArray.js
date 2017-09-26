@@ -63,28 +63,28 @@
 
 //Fizz Buzz Redo
 
-function fizzBuzz(countTo) {
-  const result = [];
-  for (let i = 1; i <= countTo; i++) {
-    switch(true) {
-    case i % 15 === 0: 
-      result.push('fizzbuzz');
-      break;
-    case i % 5 === 0:
-      result.push('buzz');
-      break;
-    case i % 3 === 0:
-      result.push('fizz');
-      break;
-    default:
-      result.push(i);
-      break;
-    }
-  } 
-  return result;
-}
+// function fizzBuzz(countTo) {
+//   const result = [];
+//   for (let i = 1; i <= countTo; i++) {
+//     switch(true) {
+//     case i % 15 === 0: 
+//       result.push('fizzbuzz');
+//       break;
+//     case i % 5 === 0:
+//       result.push('buzz');
+//       break;
+//     case i % 3 === 0:
+//       result.push('fizz');
+//       break;
+//     default:
+//       result.push(i);
+//       break;
+//     }
+//   } 
+//   return result;
+// }
  
-console.log(fizzBuzz(15));
+// console.log(fizzBuzz(15));
 
 
   
